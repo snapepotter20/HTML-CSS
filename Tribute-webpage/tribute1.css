@@ -1,0 +1,65 @@
+#main{
+      /* border: 2px solid red; */
+      background-color: rgb(252, 246, 229);
+      padding: 12px 60px;
+      margin: 34px 34px;
+      font-family: 'Playfair Display', serif;
+    }
+    #title{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      background-color: rgb(218, 212, 212);
+      padding: 5px 10px;
+      font-family: 'Noto Serif', serif;
+    }
+    #title:hover{
+      cursor: pointer;
+      background-color: rgb(197, 194, 194);
+    }
+    #img-div{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      margin: 20px 20px;
+    }
+    #img{
+      width: 260px;
+      height: 260px;
+      display: block;
+      margin: auto;
+      width: 410px;
+      height: 290px;
+      border-radius: 15px;
+    }
+    #img:hover{
+      cursor: pointer;
+
+    }
+    #tribute-info{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      /* border: 2px solid grey; */
+      box-shadow: 5px 4px 4px 5px grey;
+    }
+    #tribute-info:hover{
+      background-color: rgb(187, 180, 180);
+      color: rgb(17, 17, 17);
+      cursor: pointer;
+    }
+   
+    #link{
+      text-decoration: none;
+      font-size: 21px;
+      padding: 12px auto;
+      
+    }
+    #link:hover{
+      background-color: rgb(253, 251, 251);
+      color: rgb(3, 3, 3);
+      cursor: pointer;
+    }
