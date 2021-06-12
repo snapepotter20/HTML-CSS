@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background: url('img1.jpg') no-repeat center center/cover;
+     
+    }
+    #main{
+     border: 2px solid rgb(137, 137, 139);
+     background-color: black;
+     color: white;
+     opacity: 0.7;
+     border-radius: 6px;
+     text-align: center;
+     margin: auto;
+     font-family: 'Playfair Display', serif;
+     width: 600px;
+   }
+    #title{
+      /* border: 2px solid red; */
+      margin: 12px;
+      padding:12px;
+      font-family: 'Noto Serif', serif;
+    }
+    #description{
+      /* border: 2px solid red; */
+      margin: 15px;
+      padding:12px;
+      color: cyan;
+    }
+    #survey-form{
+      /* border: 2px solid blue; */
+      margin: 18px;
+      padding:18px;
+    }
+    .form {
+      padding:18px;
+      
+    }
+  
+    .form:hover{
+      cursor: pointer;
+    }
+    #submit{
+      /* margin:12px;
+      padding: 6px;
+      width: 104px;
+      font-size: 16px;
+      border-radius: 8px; */
+        display: block;
+        width: 43%;
+        margin: 20px auto;
+        border: 1px solid white;
+        border-radius: 8px;
+        background-color: green;
+        color: white;
+        font-size: 16px;
+        height: 28px;
+    }
+    #submit:hover{
+      background-color: rgb(168, 166, 166);
+      cursor: pointer;
+      color: black;
+    }
+   #name{
+     width: 264px;
+     height: 24px;
+     font-size: 15px;
+     border-radius: 15px;
+   }
+   #email{
+     width: 264px;
+     height: 24px;
+     font-size: 15px;
+     border-radius: 15px;
+   }
+   #number{
+     width: 264px;
+     height: 24px;
+     font-size: 15px;
+     border-radius: 15px;
+   }
+ 
+   @media only screen and (max-width:1300px) {
+     body{
+       width: 82%;
+       height: 82%;
+     }
+     #main{
+       width: 82%;
+       height: 82%;
+     }
+      #survey-form{
+        font-size: 38px;
+      }
+      #title{
+        font-size: 40px;
+      }
+      #description{
+        font-size: 38px;
+      }
+      #name{
+        font-size: 20px;
+      }
+      #email{
+        font-size: 20px;
+      }
+      #number{
+        font-size: 20px;
+      }
+      #text{
+        font-size: 38px;
+      }
+      #submit{
+        font-size: 38px;
+        height: 46px;
+      }
+  }
+  @media only screen and (max-width:755px) {
+     #text{
+       width: 300px;
+       height: 100px;
+       text-align: center;
+       margin-right: 132px;
+     }
+     #survey-form{
+        font-size: 32px;
+      }
+      #title{
+        font-size: 34px;
+      }
+      #description{
+        font-size: 32px;
+      }
+      
+    }
+    @media only screen and (max-width:414px) {
+     #text{
+       width: 205px;
+       height: 150px;
+       text-align: center;
+       margin-right: 132px;
+       font-size: 28px;
+     }
+     #submit{
+       width: 150px;
+     }
+     #name{
+       width: 168px;
+       border-radius: 7px;
+       height: 34px;
+     }
+     #email{
+       width: 168px;
+       border-radius: 7px;
+       height: 34px;
+     }
+     #number{
+       width: 168px;
+       border-radius: 7px;
+       height: 34px;
+     }
+    #form{
+      width: 100%;
+    }
+    #survey-form{
+        font-size: 29px;
+      }
+      #title{
+        font-size: 30px;
+      }
+      #description{
+        font-size: 29px;
+      }
+    }
+  @media only screen and (max-width:375px) {
+     #text{
+       width: 205px;
+       height: 150px;
+       text-align: center;
+       margin-right: 132px;
+       font-size: 28px;
+     }
+     #submit{
+       width: 134px;
+     }
+     #name{
+       width: 168px;
+       border-radius: 7px;
+       height: 34px;
+     }
+     #email{
+       width: 168px;
+       border-radius: 7px;
+       height: 34px;
+     }
+     #number{
+       width: 168px;
+       border-radius: 7px;
+       height: 34px;
+     }
+    #form{
+      width: 100%;
+    }
+    #survey-form{
+        font-size: 28px;
+      }
+      #title{
+        font-size: 30px;
+      }
+      #description{
+        font-size: 28px;
+      }
+    }
+  @media only screen and (max-width:320px) {
+     #text{
+       width: 166px;
+       height: 130px;
+       text-align: center;
+       margin-right: 132px;
+       font-size: 28px;
+     }
+     #submit{
+       width: 124px;
+       font-size: 22px;
+     }
+     #name{
+       width: 145px;
+       border-radius: 7px;
+       height: 34px;
+       font-size: 16px;
+     }
+     #email{
+       width: 145px;
+       border-radius: 7px;
+       height: 34px;
+       font-size: 16px;
+     }
+     #number{
+       width: 145px;
+       border-radius: 7px;
+       height: 34px;
+       font-size: 16px;
+     }
+    #form{
+      width: 100%;
+    }
+    #survey-form{
+        font-size: 28px;
+      }
+      #title{
+        font-size: 30px;
+      }
+      #description{
+        font-size: 28px;
+      }
+      #dropdown{
+        font-size: 18px;
+      }
+    }
+  @media only screen and (max-width:280px) {
+     #text{
+       width: 128px;
+       height: 130px;
+       text-align: center;
+       margin-right: 132px;
+       font-size: 28px;
+     }
+     #submit{
+       width: 124px;
+       font-size: 22px;
+     }
+     #name{
+       width: 121px;
+       border-radius: 7px;
+       height: 34px;
+       font-size: 16px;
+     }
+     #email{
+       width: 121px;
+       border-radius: 7px;
+       height: 34px;
+       font-size: 16px;
+     }
+     #number{
+       width: 121px;
+       border-radius: 7px;
+       height: 34px;
+       font-size: 16px;
+     }
+    #form{
+      width: 100%;
+    }
+    #survey-form{
+        font-size: 28px;
+      }
+      #title{
+        font-size: 30px;
+      }
+      #description{
+        font-size: 28px;
+      }
+      #dropdown{
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cont">
+    <div id="main">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a Survey Form to collect general information related to vaccination.</p>
+    <form action="noaction.php" id="survey-form">
+        <div class="form">
+          <label for="name">Name : </label>
+          <input id="name" type="text" placeholder="Enter your Name" required>
+        </div>
+     
+        <div class="form">
+          <label for="email">Email : </label>
+            <input id="email" type="text" placeholder="Enter your Email" required>
+        </div>
+        <div class="form">
+          <label for="number">Phone no : </label>
+            <input id="number" type="text" placeholder="Enter your Number" required min="1" max="9">
+        </div>
+        <div class="form">
+          <label for="dropdown">Locality :</label>
+          <select name="mylocality" id="dropdown">
+              <option value="Mumbai">Mumbai</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Kolkata">Kolkata</option>
+          </select>
+        </div>
+        <div class="form">
+          Gender : Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender">
+          Other <input type="radio" name="mygender">
+        </div>
+        <div class="form" value="my eligibility">
+          <label for="eligible">Vaccine Type : </label>
+          Covishield<input type="checkbox" name="my eligibility" >
+          Covaxin<input type="checkbox" name="my eligibility" >
+          Sputnik V<input type="checkbox" name="my eligibility" >
+        </div>
+        <div>
+          <label for="textarea" id="lab">Any comments or suggestions ?</label>
+          <br><textarea name="textarea"  placeholder="Enter your comments" id="text"></textarea>
+        </div>
+        <br><button id="submit">
+            Submit
+        </button>
+    </form>
+</div>
+</div>
+</body>
+</html>
