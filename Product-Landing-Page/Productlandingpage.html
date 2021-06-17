@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="Landingpage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+  @media only screen and (max-width: 1170px) {
+       body{
+         width: 800px;
+       }
+          /* Navigation */
+#nav-bar{
+    flex-direction: column;
+    width: 1000px;
+    height: 10rem;
+    /* position: relative; */
+}
+#nav-bar ul li a{
+    font-size: 2rem;
+    padding: 0px 8px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+/* Home Section */
+#home{
+  height: 370px;
+  width: 100%;
+  padding: 3px 28px;
+}
+#home::before{
+  height: 520px;
+  width: 100%;
+  margin: auto;
+  margin-left: 2rem;
+}
+#home h1{
+  font-size: 65px;
+  margin-top: 8rem;
+  text-align: center;
+}
+/* Services Section */
+#services{
+    flex-direction: column;
+}
+#services .box{
+   margin:2px auto;
+   margin-bottom: 20px;
+   padding:14px;
+}
+/* Client Section */
+#clients{
+  flex-wrap: wrap;
+}
+#clients img{
+  width:78px ;
+  padding:2px 6px;
+  height: auto;
+}
+
+/* Conatact Section */
+#form{
+    width: 80%;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 25px;
+}
+.btn{
+    font-size: 12px;
+    padding: 4px 8px;
+}
+      }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <nav id="nav-bar">
+      <div id="logo">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.U92UdavEVH3omAk_6wSXggHaHa%26pid%3DApi&f=1" alt="Dumbo" id="header-img">
+      </div> 
+      <ul>
+          <li class="nav-link"><a href="#home">Home</a></li>
+          <li class="nav-link"><a href="#services-container">Services</a></li>
+          <li class="nav-link"><a href="#video">Video</a></li>
+          <li class="nav-link"><a href="#client-section">Our Brands</a></li>
+      </ul>
+      <div >
+        <a href="#"><i class="fas fa-shopping-cart fa-2x" style="color:#f3f1f1"></i></a>
+        <a href="#"><i class="fas fa-bars fa-2x" style="color:#f3f1f1"></i></a>
+      </div>
+    </nav>
+  </header>
+  <section id="home">
+    <h1 class="h-primary">Dumbo Games</h1>
+    <p></p>
+     <form action="dumbo.php" id="form">
+      <div class="form-group">
+        <label for="name"></label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+    </div>
+    <br><div class="form-group">
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+    </div>
+     </form>
+    <button class="btn" id="submit">Order Now</button>
+  </section>
+  <section id="services-container">
+    <h1 class="h-primary center">Our Services</h1>
+    <div id="services">
+        <div class="box">
+            <img src="img5.jpg" alt="">
+            <h2 class="h-secondry">Ordering</h2>
+            <p class="center">Dumbo Games helps you find and order some most exciting and cool toys. How it works: you type in an address, we tell your delievery confirmation. </p>
+        </div>
+        <div class="box">
+            <img src="img3.jpg" alt="">
+            <h2 class="h-secondry">Quality</h2>
+            <p class="center">Dumbo Games offers you the best and premium quality toys.Toys from different brands are available. Every toy has very affordable pricing. </p>
+        </div>
+        <div class="box">
+            <img src="img6.jpg" alt="">
+            <h2 class="h-secondry">Delivery</h2>
+            <p class="center">Dumbo Games have a very smooth delivery process. There is free delivery for the customers having prime membership.We deliver to your door step. </p>
+        </div>
+     </div>
+</section>
+<iframe width="500" height="320" src="https://www.youtube.com/watch?v=6qBTWBd7TGM" id="video">
+  </iframe>
+  <section id="client-section">
+    <h1 class="h-primary">Our Brands</h1>
+    <div id="clients">
+        <div id="client-item">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.PPXZgcHcoUkL0gsOShujaAHaHa%26pid%3DApi&f=1" alt="Our Client">
+        </div>
+        <div class="client-item">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.tVTfwoHICpLA0CzazNd1ewAAAA%26pid%3DApi&f=1" alt="Our Client">
+        </div>
+        <div class="client-item">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.3LfJdc4D0cv2I7wymZYaJQHaGh%26pid%3DApi&f=1" alt="Our Client">
+        </div>
+        <div class="client-item">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.4udwZuF4qRAtwTlNu4oClwAAAA%26pid%3DApi&f=1" alt="Our Client">
+        </div>
+        <div class="client-item">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.DeTopGdTCxPl1T8_h9DyKwHaF6%26pid%3DApi&f=1" alt="Our Client">
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.Dumbo.com. All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>

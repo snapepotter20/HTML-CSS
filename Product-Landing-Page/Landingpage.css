@@ -1,0 +1,234 @@
+/* CSS Reset */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: rgb(14, 13, 13);
+}
+/* CSS Variables */
+:root{
+  --navbar-height:55px;
+}
+/* Navigation Bar */
+#nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+#nav-bar::before{
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  top: 0px;
+  left: 0px;
+}
+/* Navigation Bar:Logo and image */
+#logo{
+margin: 24px 30px;
+}
+#logo img{
+height: 80px;
+width: 80px;
+margin: -22px 3px;
+border-radius: 50px;
+}
+#logo img:hover{
+transform: scale(1.5);
+cursor: pointer;
+}
+/* Navigation Bar:List styling */
+#nav-bar ul{
+  display: flex;
+}
+#nav-bar ul li{
+  list-style: none;
+  font-size: 1.3rem;
+}
+#nav-bar ul li a{
+ display: block;
+ padding: 3px 20px;
+ border-radius: 20px;
+ text-decoration: none;
+ color: white;
+ font-family: 'Newsreader', serif;
+}
+#nav-bar ul li a:hover{
+ color: black;
+ background-color: white;
+}
+/* Home Section */
+#home{
+  display: flex;
+  flex-direction: column;
+  padding: 3px 150px;
+  height: 280px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+#home::before{
+  content: "";
+  background:url('img4.jpg') no-repeat center center/cover;
+  position: absolute;
+  height: 72%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  top: 0px;
+  left: 0px;
+}
+#home h1{
+  color: rgb(8, 8, 8);
+  text-align: center;
+  font-family: 'Merriweather', serif;
+ 
+}
+
+/* Services Section */
+#services-container{
+  margin: 90px;
+}
+#services{
+  display: flex;
+  margin: -15px;
+  justify-content: center;
+  align-items: center;
+
+}
+#services .box{
+  border: 2px solid rgb(156, 155, 155);
+  padding: 34px;
+  margin: 3px 10px;
+  border-radius: 24px;
+  background-color: rgb(241, 236, 185);
+}
+#services .box img{
+height: 210px;
+width: 300px;
+margin: auto;
+display: block;
+border-radius: 10px;
+}
+#services .box img:hover{
+transform: scale(1.2);
+cursor: pointer;
+}
+/* Client Section */
+#client-section{
+  /* height: 340px; */
+  margin: 10px;
+}
+#client-section::before{
+  content: "";
+  background: url('img2.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 55%;
+  z-index: -1;
+  opacity: 0.5;
+}
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#client-item{
+  padding: 22px;
+}
+#clients img{
+  height: 180px;
+  border-radius: 35px;
+  padding: 10px;
+}
+#clients img:hover{
+  cursor:pointer;
+  box-shadow: 4px 4px 3px 3px grey;
+  width: 150px;
+  height: 150px;
+}
+/* Form section */
+#form{
+  position: relative;
+  width: 25%;
+}
+
+#form input{
+  width: 100%;
+  padding:0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+/* Utility Classes */
+.h-primary{
+  font-size:2.8rem ;
+  padding: 12px;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  color: white;
+}
+.h-secondry{
+  font-size:2.1rem ;
+  padding: 8px;
+  text-align: center;
+  font-family: 'Newsreader', serif;
+  
+}
+.btn{
+  padding: 6px 20px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  color:whitesmoke;
+  background-color: rgb(29, 28, 28);
+  margin: 16px;
+  height: 35px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: rgb(80, 78, 78);
+  cursor: pointer;
+}
+.center{
+  text-align: center;
+  font-family: 'Newsreader', serif;
+}
+hr { 
+  display: block;
+  /* margin-top: 0.5em;
+  margin-bottom: 0.5em; */
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  border-style: inset;
+  border-width: 1px;
+  color: grey;
+ 
+} 
+.fas{
+  padding: 21px;
+  
+}
+#video{
+   margin: 10px 384px;
+}
+footer{
+  background-color: rgb(5, 5, 5);
+  color: rgb(252, 252, 252);
+  padding: 15px 20px;
+  font-weight: bold;
+}
+footer div:hover{
+  color: rgb(155, 153, 153);
+  cursor: pointer;
+}
